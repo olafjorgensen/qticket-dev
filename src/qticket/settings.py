@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rolepermissions',
     'accounts',
     'mainpage',
 ]
@@ -127,3 +128,9 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# Auth_User_Model
+AUTH_USER_MODEL = 'user_management.CustomUser'
+
+# Django-Role_Permissions
+ROLEPERMISSIONS_MODULE = 'qticket-dev.roles'

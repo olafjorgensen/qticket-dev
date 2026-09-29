@@ -5,6 +5,11 @@
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
+    {% block nav %}
+        <a href="{% url 'home' %}">Hjem.</a>
+        <a href="{% url 'login' %}">Logg inn.</a>
+        <a href="{% url 'register' %}">Registrer administator.</a>    
+    {% endblock nav %}
     {% block content %}{% endblock content %}
 </body>
 </html>
