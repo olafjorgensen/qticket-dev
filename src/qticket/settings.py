@@ -130,7 +130,7 @@ MAILERS = {
 }
 
 # Auth_User_Model
-AUTH_USER_MODEL = 'user_management.CustomUser'
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Django-Role_Permissions
-ROLEPERMISSIONS_MODULE = 'qticket-dev.roles'
+ROLEPERMISSIONS_MODULE = 'qticket.roles'

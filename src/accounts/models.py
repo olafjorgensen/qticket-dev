@@ -7,4 +7,5 @@ class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
     reg_date = models.DateTimeField(auto_now_add=True)
 
-   
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
